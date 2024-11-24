@@ -2,6 +2,10 @@
 
 This is my first python-based script. If you can improve the script, go ahead, I'll be more than happy to merge your proposal.
 
+# Example
+
+You can check a working example here: [HaKIMus/activity-collection](https://github.com/HaKIMus/activity-collection/tree/main)
+
 # Activity Logger Script
 
 A Python script that logs your Git commit activity to a specified GitHub repository. This script is useful for tracking your coding activity across different repositories, including those hosted on platforms like Bitbucket or GitLab.
@@ -54,11 +58,11 @@ cp .env.example .env
 ```
 
 **Generate a GitHub Personal Access Token**
-Navigate to: GitHub Settings > Developer settings > Personal access tokens.
-Click on "Generate new token".
-Select scopes: Choose repo (or more limited scopes as needed).
-Generate and copy the token.
-Paste the token into the GITHUB_ACCESS_TOKEN field in your .env file.
+* Navigate to: GitHub Settings > Developer settings > Personal access tokens.
+* Click on "Generate new token".
+* Select scopes: Choose repo (or more limited scopes as needed).
+* Generate and copy the token.
+* Paste the token into the GITHUB_ACCESS_TOKEN field in your .env file.
 
 **Important**: Do not share your personal access token or commit it to version control.
 
