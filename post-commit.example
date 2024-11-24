@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Path to your activity logging script
+SCRIPT_PATH="/path/to/activity.py"
+
+# Get the absolute path of the repository
+REPO_PATH=$(git rev-parse --show-toplevel)
+
+# Execute the activity logging script
+python3 "$SCRIPT_PATH" --repo-path "$REPO_PATH"
+
+# Check if a local post-commit hook exists and is executable
+LOCAL_HOOK="$REPO_PATH/.git/hooks/post-commit"
+if [ -x "$LOCAL_HOOK" ]; then
+  "$LOCAL_HOOK"
+fi

@@ -1,0 +1,12 @@
+[
+  {
+    "pattern": "absolute/path/to/repo/",
+    "project_name": "Full-time Job",
+    "message": "Work, work!"
+  },
+  {
+    "pattern": "~/projects/to/repos/*",
+    "project_name": "Full-time Job",
+    "message": "Work, work!"
+  }
+]
