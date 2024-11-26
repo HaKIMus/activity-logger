@@ -86,7 +86,7 @@ mkdir -p ~/.git-templates/hooks
 
 Configure Git to use the global hooks directory:
 ```bash
-mkdir -p ~/.git-templates/hooks
+git config --global core.hooksPath ~/.git-templates/hooks
 ```
 
 Create the `post-commit` hook:
